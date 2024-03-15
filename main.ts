@@ -214,7 +214,7 @@ namespace OLED12864_I2C {
      * @param color is string color, eg: 1
      */
     //% blockId="OLED12864_I2C_SHOWSTRING" block="显示%s|%x行|%y列|颜色%color"
-    //% weight=80 blockGap=8
+    //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showString(s: string,x: number, y: number,color: number = 1) {
         let col = 0
@@ -251,7 +251,7 @@ namespace OLED12864_I2C {
      * @param color is number color, eg: 1
      */
     //% blockId="OLED12864_I2C_NUMBER" block="显示%num在%x行%y列 颜色%color"
-    //% weight=80 blockGap=8
+    //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showNumber(num: number, x: number, y: number,color: number = 1) {
         showString(num.toString(),x, y, color)
