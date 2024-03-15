@@ -378,13 +378,13 @@ namespace OLED12864_I2C {
 
     /**
      *  OLED初始化
-     * @param addr is i2c addr, eg: 60
+     * @param addr is i2c addr
      */
-    //% blockId="OLED12864_I2C_init" block=" OLED初始化 %addr"
+    //% blockId="OLED12864_I2C_init" block=" OLED初始化 "
     //% weight=100 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
-    export function init(addr: number) {
-        _I2CAddr = addr;
+    export function init() {
+        _I2CAddr = 60;
         cmd1(0xAE)       // SSD1306_DISPLAYOFF
         cmd1(0xA4)       // SSD1306_DISPLAYALLON_RESUME
         cmd2(0xD5, 0xF0) // SSD1306_SETDISPLAYCLOCKDIV
