@@ -183,7 +183,7 @@ namespace OLED12864_I2C {
      * @param y is Y alis, eg: 0
      * @param color is dot color, eg: 1
      */
-    //% blockId="OLED12864_I2C_PIXEL" block="显示像素点行%x|列%y|颜色%color"
+    //% blockId="OLED12864_I2C_PIXEL" block="显示像素点 x%x|y%y|颜色%color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function pixel(x: number, y: number, color: number = 1) {
@@ -264,7 +264,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_HLINE" block="显示一条水平线 |列 %x|行 %y|长度 %len|颜色 %color"
+    //% blockId="OLED12864_I2C_HLINE" block="显示一条水平线 |x %x|y %y|长度 %len|颜色 %color"
     //% weight=71 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function hline(x: number, y: number, len: number, color: number = 1) {
@@ -279,7 +279,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_VLINE" block="显示一条垂直线 |行 %x|列 %y|长度 %len|颜色 %color"
+    //% blockId="OLED12864_I2C_VLINE" block="显示一条垂直线 |x %x|y %y|长度 %len|颜色 %color"
     //% weight=72 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function vline(x: number, y: number, len: number, color: number = 1) {
