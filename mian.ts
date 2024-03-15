@@ -279,7 +279,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_VLINE" block="显示一条垂直线 |行 %x|列 %y|数字 %len|颜色 %color"
+    //% blockId="OLED12864_I2C_VLINE" block="显示一条垂直线 |行 %x|列 %y|长度 %len|颜色 %color"
     //% weight=72 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function vline(x: number, y: number, len: number, color: number = 1) {
