@@ -264,7 +264,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_HLINE" block="显示一条水平线在 |列 %x|行 %y|长度 %len|颜色 %color"
+    //% blockId="OLED12864_I2C_HLINE" block="显示一条水平线 |列 %x|行 %y|长度 %len|颜色 %color"
     //% weight=71 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function hline(x: number, y: number, len: number, color: number = 1) {
