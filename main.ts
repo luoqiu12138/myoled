@@ -250,7 +250,7 @@ namespace OLED12864_I2C {
      * @param num is the number will be show, eg: 12
      * @param color is number color, eg: 1
      */
-    //% blockId="OLED12864_I2C_NUMBER" block="显示%num在%x行%y列 颜色%color"
+    //% blockId="OLED12864_I2C_NUMBER" block="显示%num|行%x|列%y|颜色%color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showNumber(num: number, x: number, y: number,color: number = 1) {
@@ -264,7 +264,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_HLINE" block="显示一条水平线在%x行%y列 长度%len 颜色%color"
+    //% blockId="OLED12864_I2C_HLINE" block="显示一条水平线在|行%x|列%y|长度%len|颜色%color"
     //% weight=71 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function hline(x: number, y: number, len: number, color: number = 1) {
@@ -279,7 +279,7 @@ namespace OLED12864_I2C {
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_VLINE" block="显示一条垂直线在%x行%y列 长度%len 颜色%color"
+    //% blockId="OLED12864_I2C_VLINE" block="显示一条垂直线在行\n行%x|列%y|长度%len|颜色%color"
     //% weight=72 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function vline(x: number, y: number, len: number, color: number = 1) {
@@ -295,7 +295,7 @@ namespace OLED12864_I2C {
      * @param y2 is Y alis, eg: 30
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_RECT" block="显示一个矩形 x1%x1|y1%y1|x2%x2|y2%y2 颜色%color"
+    //% blockId="OLED12864_I2C_RECT" block="显示一个矩形\n x1x1%|y1y1%|x2x2%|y2y2%|颜色%color"
     //% weight=73 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function rect(x1: number, y1: number, x2: number, y2: number, color: number = 1) {
