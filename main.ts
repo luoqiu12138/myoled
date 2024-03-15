@@ -4,7 +4,7 @@
 * http://www.micropython.org.cn
 */
 
-//% weight=20 color=#0855AA icon="O" block="OLED12864_I2C"
+//% weight=20 color=#0855AA icon="O" block="OLED12864"
 namespace OLED12864_I2C {
     let font: number[] = [];
     font[0] = 0x0022d422;
@@ -183,7 +183,7 @@ namespace OLED12864_I2C {
      * @param y is Y alis, eg: 0
      * @param color is dot color, eg: 1
      */
-    //% blockId="OLED12864_I2C_PIXEL" block=" 显示像素点在%x行%y列 颜色%color"
+    //% blockId="OLED12864_I2C_PIXEL" block=" 显示像素点在%x行%y列颜色%color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function pixel(x: number, y: number, color: number = 1) {
@@ -213,7 +213,7 @@ namespace OLED12864_I2C {
      * @param s is the text will be show, eg: 'Hello!'
      * @param color is string color, eg: 1
      */
-    //% blockId="OLED12864_I2C_SHOWSTRING" block="显示%s在%x行%y列 颜色%color"
+    //% blockId="OLED12864_I2C_SHOWSTRING" block="显示%s|%x行|%y列|颜色%color"
     //% weight=80 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showString(s: string,x: number, y: number,color: number = 1) {
