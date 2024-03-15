@@ -4,7 +4,7 @@
 * http://www.micropython.org.cn
 */
 
-//% weight=20 color=#0855AA icon="O" block="OLED12864_I2C"
+//% weight=20 color=#0855AA icon="O" block="OLED12864"
 namespace OLED12864_I2C {
     let font: number[] = [];
     font[0] = 0x0022d422;
@@ -178,12 +178,12 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * set pixel in OLED
+     * 在OLED中显示一个像素点
      * @param x is X alis, eg: 0
      * @param y is Y alis, eg: 0
      * @param color is dot color, eg: 1
      */
-    //% blockId="OLED12864_I2C_PIXEL" block="set pixel at x %x|y %y|color %color"
+    //% blockId="OLED12864_I2C_PIXEL" block="显示像素点行%x|列%y|颜色%color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function pixel(x: number, y: number, color: number = 1) {
@@ -207,13 +207,13 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * show text in OLED
+     * 在OLED中显示字符串
      * @param x is X alis, eg: 0
      * @param y is Y alis, eg: 0
      * @param s is the text will be show, eg: 'Hello!'
      * @param color is string color, eg: 1
      */
-    //% blockId="OLED12864_I2C_SHOWSTRING" block="show string at x %x|y %y|text %s|color %color"
+    //% blockId="OLED12864_I2C_SHOWSTRING" block="显示字符串 |行 %x|列 %y|文本 %s|颜色 %color"
     //% weight=80 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showString(x: number, y: number, s: string, color: number = 1) {
@@ -244,13 +244,13 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * show a number in OLED
+     * 在OLED中显示数字
      * @param x is X alis, eg: 0
      * @param y is Y alis, eg: 0
      * @param num is the number will be show, eg: 12
      * @param color is number color, eg: 1
      */
-    //% blockId="OLED12864_I2C_NUMBER" block="show a Number at x %x|y %y|number %num|color %color"
+    //% blockId="OLED12864_I2C_NUMBER" block="显示数字 |行 %x|列 %y|数字 %num|颜色 %color"
     //% weight=80 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showNumber(x: number, y: number, num: number, color: number = 1) {
@@ -273,13 +273,13 @@ namespace OLED12864_I2C {
     }
 
     /**
-     * draw a vertical line
+     * 在OLED中显示一条水平线
      * @param x is X alis, eg: 0
      * @param y is Y alis, eg: 0
      * @param len is the length of line, eg: 10
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_VLINE" block="draw a vertical line at x %x|y %y|number %len|color %color"
+    //% blockId="OLED12864_I2C_VLINE" block="显示一条水平线在 |行 %x|列 %y|数字 %len|颜色 %color"
     //% weight=72 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function vline(x: number, y: number, len: number, color: number = 1) {
