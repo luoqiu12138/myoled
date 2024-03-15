@@ -213,7 +213,7 @@ namespace OLED12864_I2C {
      * @param s is the text will be show, eg: 'Hello!'
      * @param color is string color, eg: 1
      */
-    //% blockId="OLED12864_I2C_SHOWSTRING" block="显示%s|%x行|%y列|颜色%color"
+    //% blockId="OLED12864_I2C_SHOWSTRING" block="显示%s在%x行%y列颜色%color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function showString(s: string,x: number, y: number,color: number = 1) {
