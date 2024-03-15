@@ -295,7 +295,7 @@ namespace OLED12864_I2C {
      * @param y2 is Y alis, eg: 30
      * @param color is line color, eg: 1
      */
-    //% blockId="OLED12864_I2C_RECT" block="显示一个矩形 | x1 %x1 y1 %y1|x2 %x2 y2 %y2|颜色 %color"
+    //% blockId="OLED12864_I2C_RECT" block="显示一个矩形 |x1 %x1 y1 %y1|x2 %x2 y2 %y2|颜色 %color"
     //% weight=73 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function rect(x1: number, y1: number, x2: number, y2: number, color: number = 1) {
