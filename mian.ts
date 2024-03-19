@@ -372,7 +372,7 @@ namespace OLED12864_I2C {
     //% weight=60 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
     export function zoom(d: boolean = true) {
-        _ZOOM = (d) ? 1 : 0
+        _ZOOM = (d) ? 0 : 1
         cmd2(0xd6, _ZOOM)
     }
 
