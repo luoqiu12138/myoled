@@ -4,7 +4,7 @@
 * http://www.micropython.org.cn
 */
 
-//% weight=50 color=#0855AA icon="\uf26c" block="OLED12864"
+//% weight=50 color=#0855AA icon="\uf26c" block="合集"
 namespace OLED12864_I2C {
     let font: number[] = [];
     font[0] = 0x0022d422;
@@ -183,6 +183,7 @@ namespace OLED12864_I2C {
      * @param y is Y alis, eg: 0
      * @param color is dot color, eg: 1
      */
+    //% subcategory=OLED12864
     //% blockId="OLED12864_I2C_PIXEL" block="显示像素点 x%x|y%y|颜色%color"
     //% weight=70 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
@@ -197,12 +198,12 @@ namespace OLED12864_I2C {
             _screen[ind + 1] = b
             _buf3[0] = 0x40
             _buf3[1] = _buf3[2] = b
-            pins.i2cWriteBuffer(_I2CAddr, _buf3)
+            //pins.i2cWriteBuffer(_I2CAddr, _buf3)
         }
         else {
             _buf2[0] = 0x40
             _buf2[1] = b
-            pins.i2cWriteBuffer(_I2CAddr, _buf2)
+           // pins.i2cWriteBuffer(_I2CAddr, _buf2)
         }
     }
 
@@ -213,6 +214,7 @@ namespace OLED12864_I2C {
      * @param s is the text will be show, eg: 'Hello!'
      * @param color is string color, eg: 1
      */
+    //% subcategory=OLED12864
     //% blockId="OLED12864_I2C_SHOWSTRING" block="显示字符串 |行 %x|列 %y|字符串 %s|颜色 %color"
     //% weight=80 blockGap=8
     //% parts=OLED12864_I2C trackArgs=0
@@ -240,7 +242,7 @@ namespace OLED12864_I2C {
         let ind0 = x * 5 * (_ZOOM + 1) + y * 128
         let buf = _screen.slice(ind0, ind + 1)
         buf[0] = 0x40
-        pins.i2cWriteBuffer(_I2CAddr, buf)
+       // pins.i2cWriteBuffer(_I2CAddr, buf)
     }
 
     /**
@@ -341,7 +343,7 @@ namespace OLED12864_I2C {
     export function clear() {
         _screen.fill(0)
         _screen[0] = 0x40
-        draw()
+       // draw()
     }
 
     /**
