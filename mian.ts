@@ -348,14 +348,20 @@ namespace OLED12864_I2C {
     }
 
     /**
-        * clear screen
+        * fill screen
         */
-    //% blockId="OLED12864_I2C_CLEAR" block="clear num %num"
-    //% weight=63 blockGap=8
+    //% blockId="OLED12864_I2C_CLEAR" block="fill screen at x1 %x1|y1 %y1|x2 %x2|y2 %y2|color %color"
+    //% weight=63 blockGap=5
     //% parts=OLED12864_I2C trackArgs=0
-    export function clear_num(num:number) {
-        _screen.fill(0)
-        _screen[0] = 0x40
+    export function fill(x1: number, y1: number, x2: number, y2: number, color: number)
+    {
+       for(let i = y1; i <= y2;i++)
+       {
+            for (let j = x1; i <= x2; j++)
+            {
+                pixel(i,j,color)
+            }
+       }
     }
 
     /**
